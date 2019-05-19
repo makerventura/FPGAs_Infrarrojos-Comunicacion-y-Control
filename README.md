@@ -1,10 +1,10 @@
-# FPGAs_Infrarrojos-Comunicacion-y-Control
+# FPGAs_Infrarrojos-Comunicación-y-Control
 
 Cuaderno sobre comunicación y control por infrarrojos utilizando las placas Icezum Alhambra y Alhambra II
 
 
 
-![IMG_20190420_203822](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190420_203822.jpg)
+![IMG_20190420_203822](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190420_203822.jpg)
 
 
 
@@ -40,7 +40,7 @@ A los efectos que a nosotros nos interesa para este documento , simplemente debe
 
 **- Configuración de Emisor Común** ,
 
- ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/fototransistorIR.png)
+ ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/fototransistorIR.png)
 
 Cuando el fototransitor está conectado a una fuente Vcc de 5 V , **mientras NO reciba iluminación IR** la señal que se obtiene por Vout es también de 5 V , es decir , **un "1" lógico** .
 
@@ -50,7 +50,7 @@ Y cuando  dicho fototransistor **es iluminado con una fuente de IR** , la lectur
 
 
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/fototransistorIR_CC.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/fototransistorIR_CC.png)
 
 En esta disposición , la respuesta que se obtiene por Vout cuando lo conectamos al Pin de entrada a la tarjeta Icezum Alhambra es justamente la contraria :
 
@@ -74,13 +74,13 @@ Aunque exista alguna tipología más , básicamente los sensores de infrarrojos 
 
   Están compuestos de un emisor más un receptor de luz IR colocados en el mismo plano , con eje paralelo y apuntando en el mismo sentido , de manera que  la luz IR que envía el emisor **solamente incidirá sobre el receptor IR en caso de que choque y se refleje en alguna superficie que no absorba dicha radiación **.
 
-  ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/dfc7c1bab5de3c26b00a9e5579a9f5d3.webp)
+  ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/dfc7c1bab5de3c26b00a9e5579a9f5d3.webp)
 
   (Imagen obtenida de ( <https://diyhacking.com/make-line-follower-robot/>))
 
   Uno de los típicos sensores que funcionan por reflexión es la referencia **CNY 70** , 
 
-  ![Sensor IR por reflexión CNY 70](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/cny70.jpg)
+  ![Sensor IR por reflexión CNY 70](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/cny70.jpg)
 
   
 
@@ -98,7 +98,7 @@ Aunque exista alguna tipología más , básicamente los sensores de infrarrojos 
 
   
 
-  ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/h22a1.jpg)![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/h21a1.jpg)
+  ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/h22a1.jpg)![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/h21a1.jpg)
 
 y aquí un enlace a la datasheet del H22A1 : <http://www.datasheet.es/PDF/55306/H22A1-pdf.html>
 
@@ -118,7 +118,7 @@ Aquí un enlace a su datasheet :
 
 
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/tsop2238.jpg)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/tsop2238.jpg)
 
 
 
@@ -136,15 +136,13 @@ En nuestro caso la resistencia de absorción será de 180 Ω y el aspecto final 
 
 
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/circuito_emisor.jpg)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/circuito_emisor.jpg)
 
 
 
 Para evitar malos contactos y darle un mejor aspecto al emisor , he construido con FreeCad una versión compacta a la que he denominado **Alhambra EmisorIR** , con el aspecto que  podéis ver en la siguiente imagen :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Alhambra_emisorIR.bmp)
-
-
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Alhambra_emisorIR.bmp)
 
 
 
@@ -167,37 +165,37 @@ Toda la documentación e información detallada la podéis localizar en el sigui
 
   - Acopio de las piezas necesarias para el montaje .
 
-  ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190419_183538.jpg)
+  ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190419_183538.jpg)
 
   
 
   - Enfundar el Led con un poco de tubo retráctil de 5 mm , de unos 15 mm de longitud para que sobre un poco y después se pueda cortar .
 
-  ![IMG_20190419_184033](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190419_184033.jpg)
+  ![IMG_20190419_184033](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190419_184033.jpg)
 
   
 
   - Imprimir las dos piezas de plástico en 3D con los archivos incluidos en el enlace .
 
-  ![IMG_20190419_191715](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190419_191715.jpg)
+  ![IMG_20190419_191715](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190419_191715.jpg)
 
   
 
   - Colocación del Led emisor en su alojamiento cuidando que la posición del polo + sea la correcta según la imagen .
 
-  ![IMG_20190419_191936](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190419_191936.jpg)
+  ![IMG_20190419_191936](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190419_191936.jpg)
 
   
 
   - Soldamos componentes según se aprecia en la imagen . Nota : El pin central carece de contacto con ningún elemento y solamente se mantiene a efectos de compatibilizar este sensor con las conexiones de la tarjeta Icezum Alhambra.
 
-  ![IMG_20190419_193110](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190419_193110.jpg)
+  ![IMG_20190419_193110](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190419_193110.jpg)
 
   
 
   - Comprobamos que funciona y cerramos pegando la tapa inferior para evitar malos contactos .
 
-  ![IMG_20190419_193708](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190419_193708.jpg)
+  ![IMG_20190419_193708](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190419_193708.jpg)
 
 
 
@@ -205,7 +203,7 @@ Toda la documentación e información detallada la podéis localizar en el sigui
 
 Para construir el circuito receptor con el que he desarrollado los ejemplos de este cuaderno , me he basado en el esquema indicado como estándar en su hoja técnica :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/circuito_receptorIR.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/circuito_receptorIR.png)
 
 al que le he añadido un led estárdar con su resistencia de absorción entre Vs y OUT para que me sirva simplemente como avisador de que el fototransistor está pasando de estado reposo "1" a estado "0" y por tanto recibiendo señales .
 
@@ -213,7 +211,7 @@ Aquí os dejo el esquemático del circuito electrónico en fritzing :
 
 
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/receptorIR.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/receptorIR.png)
 
 
 
@@ -221,11 +219,11 @@ Así como unas fotos de la primera versión que hice del circuito usando una pla
 
 
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190421_111542.jpg)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190421_111542.jpg)
 
 
 
-![IMG_20190421_111555](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190421_111555.jpg)
+![IMG_20190421_111555](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190421_111555.jpg)
 
 
 
@@ -270,39 +268,39 @@ A continuación os dejo unas instrucciones para construirlo y una imágenes del 
 
   
 
-  ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Alhambra_receptorIR.bmp)
+  ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Alhambra_receptorIR.bmp)
 
   
 
-  ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190420_174254.jpg)
+  ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190420_174254.jpg)
 
   
 
-  ![IMG_20190420_174556](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190420_174556.jpg)
+  ![IMG_20190420_174556](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190420_174556.jpg)
 
   
 
-  ![IMG_20190420_185734](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190420_185734.jpg)
+  ![IMG_20190420_185734](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190420_185734.jpg)
 
   
 
-  ![IMG_20190420_200704](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190420_200704.jpg)
+  ![IMG_20190420_200704](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190420_200704.jpg)
 
   
 
-  ![IMG_20190420_200730](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190420_200730.jpg)
+  ![IMG_20190420_200730](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190420_200730.jpg)
 
   
 
-  ![IMG_20190420_201535](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190420_201535.jpg)
+  ![IMG_20190420_201535](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190420_201535.jpg)
 
   
 
-  ![IMG_20190420_202618](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190420_202618.jpg)
+  ![IMG_20190420_202618](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190420_202618.jpg)
 
   
 
-  ![IMG_20190420_203822](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190420_203822.jpg)
+  ![IMG_20190420_203822](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190420_203822.jpg)
 
 
 
@@ -338,19 +336,19 @@ Este ejemplo es muy sencillo y solamente trata de ver **dos de las formas más c
 
 Aquí os dejo el circuito eléctrico típico de conexión de un sensor H22A1:
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/circuito_sensor_corte.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/circuito_sensor_corte.png)
 
 Los números del 1 al 4 suelen estar serigrafiados en el sensor , pero en caso contrario hay que buscar una letra "E" para saber cual es el "emisor", y una vez identificado , la patilla más larga será el polo positivo y por tanto el "1" , el "2" el negativo del mismo lado . Por el lado del "receptor" , que a veces se marca con una letra "S" , la patilla más larga será la conexión "3" , Vs , que tendremos que unir con el Pin de entrada a la tarjeta Icezum Alhambra , y la opuesta del mismo lado del sensor será la número 4 , que habrá que conectar a GND .
 
 Os adjunto también todo esto simulado en un esquema de conexionado eléctrico :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/circuitoconexion_sensor_H22A1.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/circuitoconexion_sensor_H22A1.png)
 
 donde el elemento **QRB1114** realmente es un sensor de reflexión , no de corte . Pero al no encontrar el adecuado en Fritzing he optado por este que tiene igual conexionado para hacer el esquema .
 
 Y este sería el circuito de conexiones en la Icezum Alhambra II correspondiente al Ejemplo E01 :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E01_imagen01.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E01_imagen01.png)
 
 Finalmente , os dejo aquí también un enlace a un video donde se puede ver el circuito en funcionamiento :
 
@@ -368,13 +366,13 @@ Dicha ráfaga es recibida por el **Receptor_IR** , pasando de estado "1" lógico
 
 Esta es una imagen del circuito completo relacionado con este ejemplo E02 :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E02.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E02.png)
 
 
 
 Para entender dicho circuito , comenzaremos por ver en detalle la parte del **Emisor** :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E02_im01.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E02_im01.png)
 
 
 
@@ -382,7 +380,7 @@ Según se aprecia en el circuito anterior , cuando presionamos el Pulsador D13 p
 
 Ahora fijemos nuestra atención en cómo  está construido el circuito correspondiente al **Receptor de la señal** :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E02_imagen02.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E02_imagen02.png)
 
 Según hemos comentado al referirnos al funcionamiento del fototransistor que hemos montado en el Alhambra_ReceptorIR , si lo conectamos en forma de **Emisor común** como es nuestro caso , la señal que dicho ReceptorIR enviará al Pin de entrada DD5 será en reposo un "1" , mientras que al recibir iluminación IR dicha señal pasará a estado "0" . Por ese motivo , añadimos la puerta **Not** que invierte el estado y el **detector de flanco de subida** , que cada vez que el receptorIR  sea iluminado con una ráfaga de IR , pasando de 1 a 0 , el detector percibirá el cambio de 0 a 1 , enviando un tic al **biestable de cambio** que cambiará de "0" a "1" o viceversa , **encendiendo-apagando de esta manera el LED conectado en el Pin D11**.
 
@@ -394,7 +392,7 @@ En el canal CH0 se aprecia como el receptorIR percibió la llegada de **3 ráfag
 
 
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo2_signal_analysis.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo2_signal_analysis.png)
 
 
 
@@ -412,13 +410,13 @@ En este Ejemplo E03 , he preparado una variante del Ejemplo E02 anterior, donde 
 
 Aquí tenemos una vista general de todo el circuito del **Ejemplo E03** :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E03.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E03.png)
 
 
 
 Como se puede ver el circuito del **Emisor** es idéntico al ejemplo E02 anterior , y  la diferencia se aprecia en la parte del **Receptor** ,
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E03_im01.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E03_im01.png)
 
 donde a la salida del bloque **detector de flanco de subida** colocamos un contador de módulo 10 , que envía la señal de tics contabilizados a un display de 7 segmentos .
 
@@ -449,7 +447,7 @@ Antes de ver el circuito concreto del ejemplo E04 , vamos primeramente a analiza
 
 En la siguiente imagen he recirculado en color rojo las diferencias entre este circuito emisor Serial-tx-IR y la versión Serial-tx de @Obijuan en la que se basa :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E04_im01.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E04_im01.png)
 
 
 
@@ -463,7 +461,7 @@ Como se puede apreciar en la imagen anterior , las diferencias con el circuito d
 
 En la siguiente imagen he recirculado en color rojo las diferencias entre este circuito receptor Serial-rx-IR y la versión Serial-rx de @Obijuan en la que está basado :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E04_im02.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E04_im02.png)
 
 
 
@@ -487,11 +485,11 @@ Simultáneamente nuestro receptor Serial-tx-IR va registrando los 8 bits conform
 
 En la siguiente imagen vemos cómo está construido el circuito del **emisor** basado en el bloque Serial-tx-IR :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E04_emisor.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E04_emisor.png)
 
 Así como el circuito del **receptor** basado en el bloque Serial-rx-IR :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E04_receptor.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E04_receptor.png)
 
 Aquí os dejo también el enlace al vídeo de este ejemplo para que podáis comprobar su funcionamiento .
 
@@ -512,7 +510,7 @@ Para terminar de analizar este ejemplo y que se pueda apreciar con claridad el f
 
 Aquí os adjunto la imagen del caso revisado en el analizador digital en que el código enviado es K = 170 ( 10101010) :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo4_signal_analysis.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo4_signal_analysis.png)
 
 
 
@@ -556,7 +554,7 @@ Pues en todas las pruebas que he llevado a cabo con todos los mandos de que disp
 
 A continuación podéis ver unas imágenes donde se aprecia la diferencia entre el envío de un "0" lógico y de un "1" lógico :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/modulacion_IR_NEC.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/modulacion_IR_NEC.png)
 
 Como podéis apreciar la forma de enviar un "1" es realizar una ráfaga IR modulada a 38 KHz durante 560 µs seguida de un silencio de 1690 µs , hasta completar un total de 2250 µs .
 
@@ -564,7 +562,7 @@ En cambio para enviar un "0" la emisión se compone de una ráfaga modulada a 38
 
 En la siguiente imagen podéis ver cómo estaría formado la emisión de un código completo según el protocolo NEC32 :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/mensajetipoNEC.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/mensajetipoNEC.png)
 
 La emisión del mensaje comienza con el **bit Start**  ( ráfaga de IR de 9 ms seguida de un silencio de 4.5 ms , con las salvedades sobre duración real antes indicadas ) . A continuación se envía la **dirección** que en el caso del NEC extendido ocupa 16 bits . Después se envía el **código de 8 bits** , y el mismo **código de 8 bits pero negado** , para finalizar con el **bit END** que dura otros 560 µs . En total , bit de comienzo start más 32 bits de datos + bit end .
 
@@ -588,19 +586,19 @@ Por tanto , una vez que entendáis cómo he obtenido los códigos de este mando 
 
  El proceso de obtención de los códigos es tremendamente sencillo . Aquí tenéis el circuito :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_00_img0.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_00_img0.png)
 
 Con este simple código vamos pulsando cada una de las teclas de nuestro mando y las vamos recogiendo en el analizador digital , tomando nota del resultado obtenido . Aquí podemos ver el resultado que se obtiene al pulsar la tecla ON-OFF del mando que he utilizado yo , así como su interpretación :
 
 
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_00_img1.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_00_img1.png)
 
 
 
 Con este método que os acabo de explicar fui recogiendo y anotando uno a uno los códigos de cada una de las teclas que me parecieron interesantes del mando en cuestión , para las aplicaciones posteriores que le iba a dar . Y como resultado aquí tenéis una imagen del mando y la  tabla con la numeración de cada una de las teclas que analicé y su código :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/IMG_20190428_210329.jpg)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/IMG_20190428_210329.jpg)
 
 
 
@@ -631,7 +629,7 @@ A continuación vamos a estudiar el circuito que he implementado para emular un 
 
 Aquí tenéis para comenzar la imagen global de todo el circuito que compone el **bloque EmisorIR_NEC32ext** para que lo podáis valorar en su conjunto , así como también , remarcados en rojo , los 5 bloques funcionales más importantes en los que se puede compartimentar su funcionamiento :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_00_img2.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_00_img2.png)
 
 
 
@@ -663,7 +661,7 @@ Tecla **ON-OFF** del mando Samsung AA59-00790A :
 
 **Código BINARIO** : 11100000111000000100000010111111
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_01_img1.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_01_img1.png)
 
 
 
@@ -683,11 +681,11 @@ Con este Ejemplo E05_02 , utilizamos un teclado de 4 interruptores un tanto rudi
 
 Aquí vemos la parte del circuito donde seleccionamos y visualizamos el código a enviar :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_02_img1.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_02_img1.png)
 
 Mientras que en esta otra imagen podemos ver la parte del mismo circuito con la tabla donde tenemos almacenados los 10 códigos de 32 bits correspondientes a los 10 botones del mando que queremos emular :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_02_img0.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_02_img0.png)
 
 
 
@@ -699,7 +697,7 @@ Mientras que en esta otra imagen podemos ver la parte del mismo circuito con la 
 
 
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/MandoTV_IR_Jelly.jpg)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/MandoTV_IR_Jelly.jpg)
 
 
 
@@ -732,15 +730,15 @@ Veamos ahora las partes más importantes que componen nuestro nuevo circuito :
 
 **Primero** la parte de la Tabla Bin ( 5 entradas , 32 salidas ) donde se almacena la asignación entre cada una de las teclas del teclado Jelly Comb y su correspondencia con el código de 32 bits que emula a un determinado botón del mando TV :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_03_img1.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_03_img1.png)
 
 **Segundo** , la parte del circuito que corresponde al bloque creado por @Obijuan necesario para controlar las pulsaciones del teclado Jelly . Este bloque de circuito detecta la tecla pulsada y nos sirve para realizar dos acciones diferentes : Por una parte , el código de la tecla pulsada **que se obtiene por la salida kcode[4:0]**se envía a la tabla anterior para buscar el código de 32 bits correspondiente , y por otro lado , el hecho en sí de haber pulsado una tecla lo usamos como señal de **comienzo de envío** del código al receptor ( **La señal se obtiene por la salida kst del bloque**) . La salida hacia los leds internos de la placa Alhambra nos sirve únicamente como testigo luminoso de comprobación del código binario de 5 bits de la tecla pulsada en el teclado Jelly :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_03_img2.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_03_img2.png)
 
 **Finalmente** , si en vez de optar por enviar el código IR al **receptor del televisor** lo quisiéramos enviar a nuestra propia placa Alhambra a través del **Alhambra ReceptorIR** , y de ahí al PC para su análisis mediante el analizador digital en cualquier software como pueda ser Logic o Pulse View , tendríamos que añadir esta parte del circuito optativa antes de grabar el mismo en nuestra placa :
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_03_img3.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_03_img3.png)
 
 Para terminar con este ejemplo os dejo el enlace al video donde se puede comprobar el correcto funcionamiento de nuestro **NUEVO MINI-MANDO COMPACTO PARA TELEVISOR** . ¡ Todo un avance tecnológico que no pretendo que nos haga ricos económicamente , pero sí en **conocimientos Maker** ! :
 
@@ -772,7 +770,7 @@ Aquí tenéis para comenzar la imagen global de todo el circuito que compone el 
 
 
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_04_img01.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_04_img01.png)
 
 
 
@@ -794,7 +792,7 @@ Hagamos finalmente un circuito sencillo de prueba donde empleemos el bloque Rece
 
 Aquí vemos cómo quedaría el circuito de dicho ejemplo de prueba :
 
-###### ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_04_img02.png)
+###### ![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_04_img02.png)
 
 y aquí enlace al video donde se ve su funcionamiento ,
 
@@ -812,7 +810,7 @@ Esta es una imagen del circuito completo correspondiente a este ejemplo :
 
 
 
-![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/Ejemplo_E05_05_img01.png)
+![](https://raw.githubusercontent.com/makerventura/Mundo_FPGA_libre/master/Imagenes/InfrarrojosIR/Ejemplo_E05_05_img01.png)
 
 Y aquí podéis ver una tabla de relación entre la tecla que pulsamos en el mando , el estado de los dos biestables del circuito ( i1 e i0 )  y las acciones que genera respecto al encendido (1) o apagado (0) de los dos motores que gobiernan las ruedas del robot :
 
@@ -856,6 +854,4 @@ Un abrazo a tod@s ,
 
 
 MakerVentura , Mayo del 2019
-
-
 
